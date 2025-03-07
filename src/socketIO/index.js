@@ -5,7 +5,7 @@ import {
   setAllCourses,
   setFilteredCourses,
 } from '../store/courseSlice'
-const socket = io('http://localhost:8000')
+const socket = io('https://coursebackend-8urz.onrender.com')
 // const dispatch = useDispatch()
 
 socket.on('connect', () => {
