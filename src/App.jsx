@@ -13,7 +13,7 @@ import './socketIO/index'
 const App = () => {
   const dispatch = useDispatch()
   useEffect(() => {
-    fetch('/api/v1/courses')
+    fetch('https://coursebackend-8urz.onrender.com/api/v1/courses')
       .then(res => res.json())
       .then(data => {
         console.log('Fetched data', data)

@@ -19,7 +19,7 @@ const Card = ({
   const LikeHandler = e => {
     if (fill === 'none') {
       console.log('Id->  ', id)
-      fetch(`/api/v1/courses/${id}?increment=true`, {
+      fetch(`https://coursebackend-8urz.onrender.com/api/v1/courses/${id}?increment=true`, {
         method: 'PATCH',
       })
         .then(res => res.json())
@@ -34,7 +34,7 @@ const Card = ({
           }
         })
     } else {
-      fetch(`/api/v1/courses/${id}?increment=false`, {
+      fetch(`https://coursebackend-8urz.onrender.com/api/v1/courses/${id}?increment=false`, {
         method: 'PATCH',
       })
         .then(res => res.json())
